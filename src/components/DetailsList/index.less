@@ -1,0 +1,122 @@
+@import '~antd/lib/style/themes/default.less';
+// @import '~@/utils/utils.less';
+.cus_detailsText{
+  // margin-bottom: 10px;
+  div{
+    margin-right: 1.5%;
+  }
+  // div:nth-of-type(odd){
+  //   margin-right: 3%;
+  // }
+
+}
+.detailCommom{
+  float: left;
+  width: 48.5%;
+  box-sizing: border-box;
+  padding: 8px 0;
+  border-bottom: 1px solid #e4dddd;
+  label{
+    width: 136px;
+    display: inline-block;
+    text-align: right;
+    color: #888;
+  }
+  label::after {
+    content: ':';
+    position: relative;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+}
+}
+.detailsSpan{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  max-width: ~'calc(100% - 136px)';
+  color: #000;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.rowText{
+  width: 98.5%;
+}
+.dangerHtml_text{
+  text-indent: 2em;
+  p {
+     margin-bottom: 0em;
+  }
+}
+.CollapseUpdate{
+  :global{
+     .ant-collapse > .ant-collapse-item > .ant-collapse-header,.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+       background: #fff;
+     }
+     .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+       border-bottom: 1px solid #eeefef;
+       padding-bottom: 15px;
+       padding-top: 15px;
+     }
+     .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+       padding-top: 12px;
+       padding-bottom: 12px
+     }
+     
+   }
+}
+.CollapseDetails{
+  :global{
+    .ant-collapse-borderless{
+       background: #f0f2f5;
+     }
+     .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+       border-bottom: 1px solid #eeefef;
+       padding-bottom: 12px;
+       padding-top: 12px;
+     }
+     
+     .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+       padding-top: 12px;
+       padding-bottom: 12px
+     }
+     .antd-pro-components-page-header-index-pageHeader{
+       display: none
+     }
+   }
+}
+:global{
+.global_customDraw{
+  .ant-drawer-wrapper-body,.antd-pro-pages-manage-car-vehicle-details-CollapseDetails .ant-collapse-borderless{
+    background: #f0f2f5;
+  }
+  .ant-collapse-item{
+    background: #fff;
+  }
+  .ant-drawer-header{
+    padding: 10px 12px;
+  }
+}
+.cus_UploadDetail{
+  width:~'calc(100% - 116px)' ;
+  .ant-upload-list-picture-card .ant-upload-list-item-info{
+    width:100%;
+  }
+  .ant-upload-list.ant-upload-list-picture-card{
+    display: flex;
+    // flex-wrap: wrap;
+  }
+}
+
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}

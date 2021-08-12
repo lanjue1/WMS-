@@ -1,0 +1,123 @@
+@import '~antd/lib/style/themes/default.less';
+// @import '~@/utils/utils.less';
+//
+.CollapseUpdate{
+    :global{
+      .ant-collapse-borderless{
+         background: #F0F2F5;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header,.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+         background: #fff;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+         border-bottom: 1px solid #e8e8e8;
+         padding:10px 10px 12px 25px;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+        left: 10px;
+      }
+      .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-extra{
+        margin-top: -3px;
+      }
+       .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+       }
+       .ant-collapse-content > .ant-collapse-content-box{
+        padding: 0 10px!important;
+      }  
+     }
+     .headerTitle{
+        display: flex; justify-content: space-between;
+     }
+     .customPanelStyle{
+        border-radius: 4px;
+        margin-bottom: 10px;
+        border: 0;
+        overflow: hidden
+     }
+  }
+  
+  .tableList {
+    .tableListOperator {
+      margin-bottom: 10px;
+      button {
+        margin-right: 8px;
+      }
+    }
+  }
+  .tableListForm {
+    :global {
+      .ant-form-item {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 10px;
+        > .ant-form-item-label {
+          width: 120px;
+          // padding-right: 8px;
+          line-height: 32px;
+        }
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+      }
+      .ant-form-item-control-wrapper {
+        flex: 1;
+      }
+    }
+    .submitButtons {
+      display: block;
+      margin-bottom: 10px;
+      white-space: nowrap;
+    }
+  }
+  .closeIcon{
+    width:100%;
+    background: #fafafa;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 5px;
+    &:hover{
+        background: #fafafa !important;
+    }
+}
+
+  :global {
+    .cus_ModalUpdateForm{
+      .ant-modal-body{
+        // padding: 15px;
+      }
+      .ant-form-item {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 10px;
+        > .ant-form-item-label {
+          width: 115px;
+          // padding-right: 8px;
+          line-height: 32px;
+        }
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+      }
+      .ant-form-item-control-wrapper {
+        flex: 1;
+      }
+    }
+
+  }
+  
+  // @media screen and (max-width: @screen-lg) {
+  //   .tableListForm :global(.ant-form-item) {
+  //     margin-right: 24px;
+  //   }
+  // }
+  
+  // @media screen and (max-width: @screen-md) {
+  //   .tableListForm :global(.ant-form-item) {
+  //     margin-right: 8px;
+  //   }
+  // }

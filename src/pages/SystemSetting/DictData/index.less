@@ -1,0 +1,49 @@
+:global{
+  .dictData_list{
+    width:210px;
+      .ant-tabs .ant-tabs-left-bar .ant-tabs-tab{
+          margin:0;
+          width: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+      }
+  }
+  .tabBox{
+      height: 500px;
+      white-space:nowrap;
+      border-radius: 4px;
+      overflow-y: hidden;
+      &::-webkit-scrollbar
+      {
+        width: 8px;
+        background-color: white;
+      };
+      &::-webkit-scrollbar-thumb
+      {
+        border-radius: 10px;
+        background-color: #d2d2d2
+      }
+      &:hover{
+        overflow: auto;
+      }
+  }
+}
+
+.dictTitle{
+  padding: 3px 0;
+  padding-right: 20px;
+  margin-bottom: 0;
+  text-align: right;
+  // background: #e2e8ea;
+  width: 100%;
+  z-index: 9999;
+}
+.parentBox{
+display: flex;
+}
+.changeBox{
+flex:1;
+width:calc(100% - 30px - 210px);
+padding: 0 15px
+}

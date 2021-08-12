@@ -1,0 +1,40 @@
+@import '~antd/lib/style/themes/default.less';
+// @import '~@/utils/utils.less';
+.customCollapse{
+    :global{
+      .ant-collapse-borderless{
+         background: #F0F2F5;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header,.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+         background: #fff;
+       }
+       .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box{
+         padding-top: 0;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+         border-bottom: 1px solid #e8e8e8;
+         padding:10px 10px 12px 25px;
+       }
+       .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content{
+         padding-top: 10px;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+         left: 10px;
+       }
+       .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-extra{
+         margin-top: -3px;
+       }
+       .ant-collapse-content > .ant-collapse-content-box{
+         padding: 10px;
+       }
+     }
+     .customHeader{
+        display: flex; justify-content: space-between;
+     }
+  }
+  .customPanel{
+    border-radius: 4px !important ;
+    margin-bottom: 12px !important;
+    border: 0 !important;
+    overflow: hidden !important;
+ }

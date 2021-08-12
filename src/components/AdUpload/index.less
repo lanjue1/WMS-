@@ -1,0 +1,53 @@
+.upload {
+  .upload-file {
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    position: relative;
+    &-icon {
+      font-size: 18px;
+      color: #1890ff;
+    }
+    &-name {
+    //   margin-top: 10px;
+    font-size: 12px;
+      box-sizing: border-box;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    &-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      width: 64px;
+      height: 64px;
+      // display: inline-block;
+      // padding-top: 30px;
+      // padding-left: 20px;
+    }
+  }
+}

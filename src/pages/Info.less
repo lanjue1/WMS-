@@ -1,0 +1,63 @@
+@import '~antd/lib/style/themes/default.less';
+.tableListForm {
+    :global {
+      .ant-form-item {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 10px;
+        > .ant-form-item-label {
+          width: 106px;
+          padding-right: 8px;
+          line-height: 32px;
+          text-align: right;
+        }
+        .ant-form-item-control {
+          line-height: 32px;
+        }
+      }
+      .ant-form-item-control-wrapper {
+        flex: 1;
+      }
+      .cus_chooseSection{
+        .ant-form-item-control-wrapper{
+          width: 100%;
+        }
+      }
+      .cus_cartPlateTypeOne{
+        .ant-form-item-label::before {
+          display: inline-block;
+          margin-right: 4px;
+          color: #f5222d;
+          font-size: 14px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: '*';
+      }
+      }
+
+    }
+    .submitButtons {
+      display: block;
+      margin-bottom: 24px;
+      white-space: nowrap;
+    }
+  }
+  :global{
+    .table_info_total {
+      .ant-table-tbody > tr:last-child {
+        background: #e8eaea;
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-lg) {
+    .tableListForm :global(.ant-form-item) {
+      margin-right: 24px;
+    }
+  }
+  
+  @media screen and (max-width: @screen-md) {
+    .tableListForm :global(.ant-form-item) {
+      margin-right: 8px;
+    }
+  }

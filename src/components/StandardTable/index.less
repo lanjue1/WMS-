@@ -1,0 +1,53 @@
+@import '~antd/lib/style/themes/default.less';
+
+.standardTable {
+  position: relative;
+    :global { 
+      .react-resizable {
+        position: relative;
+      }
+      .react-resizable-handle {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        bottom: 0;
+        right: -5px;
+        cursor: col-resize;
+      }
+      .ant-table-pagination {
+        margin: 10px 0 0 0;
+      }  
+      .ant-pagination{
+        margin-top: 10px;
+        float: right;
+      } 
+  }
+  .setting{
+    position: absolute;
+    top:2px;
+    right:2px;
+    width:32px;
+    height:32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 5px;
+    &:hover{
+      cursor: pointer;
+      background: #f1f1f1;
+    }
+  }
+  .tableAlert {
+    margin-bottom: 5px;
+  }
+  .clickRowStyl{
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 600;
+    background-color: #fafafa;
+  }
+
+  .light-row {
+    background: blue
+  }
+}

@@ -1,0 +1,44 @@
+
+@import '~antd/lib/style/themes/default.less';
+// @import '~@/utils/utils.less';
+
+.customDraw{
+    .customHeader{
+        display: flex;
+        justify-content: space-between; 
+        font-size: 14px;   
+    }
+    :global{
+        .ant-drawer-body{
+            padding: 12px;
+            padding-bottom: 0px;
+            height:  ~'calc(100vh - 41.5px)';
+            overflow-y: auto;
+          }
+          .ant-drawer-wrapper-body,.antd-pro-pages-manage-car-vehicle-details-CollapseDetails .ant-collapse-borderless{
+            background: #f0f2f5;
+          }
+          .ant-collapse-item{
+            background: #fff;
+          }
+          .ant-drawer-header{
+            padding: 4px 12px;
+          }
+    }
+   
+  }
+
+
+
+  // @media screen and (min-width: @screen-md) {
+     // :global(.ant-drawer-right.ant-drawer-open.no-mask) {
+  //   width:70% !important
+  // }
+  // }
+  
+  // @media screen and (max-width: @screen-md) {
+  //   :global(.ant-drawer-right.ant-drawer-open.no-mask) {
+  //     width:88% !important
+  //   }
+  // }
+  

@@ -1,0 +1,25 @@
+.detail{
+    padding: 8px 0;
+  .detailKey{
+    width: 143px;
+    display: inline-block;
+    text-align: right;
+    float:left;
+    color: #888;
+    &::after {
+        content: ':';
+        position: relative;
+        top: -0.5px;
+        margin: 0 8px 0 2px;
+    }
+  }
+  .detailValue{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: ~'calc(100% - 143px)';
+    color: #000;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}

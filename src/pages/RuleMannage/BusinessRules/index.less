@@ -1,0 +1,95 @@
+.gutterBox {
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  position: relative;
+  min-height: 520px;
+}
+.buttonGroup {
+  position: absolute;
+  bottom: 0px;
+}
+.treeTitle {
+  span {
+    margin-right: 10px;
+  }
+  a {
+    margin-right: 8px;
+  }
+}
+
+:global {
+  .treeNodeHandleBtn {
+    display: none;
+  }
+  .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    .treeNodeHandleBtn {
+      display: inline-block;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .busRules_treeBox {
+    height: calc(100vh - 95px);
+    white-space: nowrap;
+    border-radius: 4px;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: white;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #d2d2d2;
+    }
+    &:hover {
+      overflow: auto;
+    }
+    // .ant-tree.ant-tree-directory > li.ant-tree-treenode-selected > span.ant-tree-node-content-wrapper::before, .ant-tree.ant-tree-directory .ant-tree-child-tree > li.ant-tree-treenode-selected > span.ant-tree-node-content-wrapper::before{
+    //     background-color: #bae7ff;
+    // }
+  }
+}
+:global {
+  .custom-formitem {
+    .antd-pro-components-antd-form-index-tableListForm .ant-form-item > .ant-form-item-label {
+      width: auto;
+    }
+  }
+}
+//调试
+.debug_resbox {
+  margin-top: 20px;
+  border-top: 1px dashed #ccc;
+}
+.isRelease {
+  color: #075df3;
+  font-weight: bolder;
+}
+.isDefault {
+  color: #fff;
+}
+
+.content_right {
+  height: calc(100vh);
+  position: relative;
+  .btnBox {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 115px);
+    box-sizing: border-box;
+    margin-left: 110px;
+  }
+  .btnBox_ab {
+    width: calc(100% - 135px);
+    margin-bottom: 40px;
+    // position: absolute;
+    bottom: 10;
+  }
+}
+
+.rulesContent{
+  width: 600;
+}
